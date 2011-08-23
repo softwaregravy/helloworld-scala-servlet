@@ -1,0 +1,12 @@
+HelloWorld Scala Servlet
+
+This is a very simple servlet meant to demonstrate embedding jetty in scala
+using sbt 0.10 in order to create a runnable servlet.  The documentation around
+using jetty with sbt 0.10 was rather skimpy so this took much longer than it
+should have.
+
+To run this program, in sbt run
+
+  jetty-run
+
+Then you can see "Hello world!" at http://localhost:8080.
