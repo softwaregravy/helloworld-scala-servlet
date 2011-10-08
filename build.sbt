@@ -8,9 +8,9 @@ name := "helloworld"
 
 version := "1.0"
 
-scalaVersion := "2.9.0"
+scalaVersion := "2.9.1"
 
 libraryDependencies ++= Seq(
-  "org.mortbay.jetty" % "jetty" % "6.1.22" % "jetty",
+  "org.eclipse.jetty" % "jetty-webapp" % "8.0.1.v20110908" % "container",
   "javax.servlet" % "servlet-api" % "2.5" % "provided->default"
 )
