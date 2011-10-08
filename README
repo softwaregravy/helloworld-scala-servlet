@@ -1,12 +1,29 @@
 HelloWorld Scala Servlet
 
 This is a very simple servlet meant to demonstrate embedding jetty in scala
-using sbt 0.10 in order to create a runnable servlet.  The documentation around
-using jetty with sbt 0.10 was rather skimpy so this took much longer than it
-should have.
+using sbt 0.11 in order to create a runnable servlet.  The documentation around
+using the latest version of Jetty with sbt 0.11 was rather skimpy so this took
+much longer than it should have.
 
-To run this program, in sbt run
+It wasn't clear whether the xsbt-web-plugin
+(https://github.com/siasia/xsbt-web-plugin/) worked with Jetty 8, but
+apparantly it does.  The xsbt-web-plugin is added in project/plugins.sbt.
+It is also necessary to have Jetty on the classpath for the "container"
+scope, as specified in the build.xml.
 
-  jetty-run
+To run this program, in sbt run:
 
-Then you can see "Hello world!" at http://localhost:8080.
+  container:start
+
+Then you can see "Hello world!" at http://localhost:8080/.
+
+Here are a few other commands:
+
+  container:reload
+  container:stop
+
+Sometimes it's nice to have your project continuously deployed (deployed after
+each saved change):
+
+  container:start
+  ~container:reload /
