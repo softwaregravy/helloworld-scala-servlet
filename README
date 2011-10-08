@@ -10,6 +10,3 @@ To run this program, in sbt run
   jetty-run
 
 Then you can see "Hello world!" at http://localhost:8080.
-
-Note, there probably are some things wrong, don't hesitate to tell me about
-them!
