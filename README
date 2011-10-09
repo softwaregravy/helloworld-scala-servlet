@@ -26,4 +26,4 @@ Sometimes it's nice to have your project continuously deployed (deployed after
 each saved change):
 
   container:start
-  ~container:reload /
+  ~compile
